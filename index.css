@@ -1,0 +1,422 @@
+@font-face {
+    font-family: "Mont-Light";
+    src: url("./font/Mont-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Mont-Regular";
+    src: url("./font/Mont-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Mont-SemiBold";
+    src: url("./font/Mont-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Mont-Bold";
+    src: url("./font/Mont-Bold.ttf") format("truetype");
+}
+
+* {
+    font-family: 'Mont-SemiBold', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/*noinspection CssInvalidPropertyValue*/
+header {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    justify-content: space-between;
+    height: auto;
+    width: -webkit-fill-available;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    transform: translate();
+    transition: top 0.5s;
+    background: transparent linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+
+}
+
+.titles {
+    align-items: center;
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.titles img {
+    margin-right: 60px;
+}
+
+.titles div a {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-right: 30px;
+}
+
+button {
+    z-index: 100;
+    width: 250px;
+    background-color: #EF302B;
+    border-style: none;
+    padding: 20px;
+    color: white;
+    height: fit-content;
+    border-radius: 20px;
+    transform: translate();
+    transition-duration: 300ms;
+}
+
+button:hover {
+    background-color: #C0231F;
+    transform: translate();
+    transition-duration: 300ms;
+}
+
+.mainBlock {
+    /*display: grid;*/
+    z-index: 1;
+    width: 100vw;
+    height: auto;
+}
+
+.mainBlock .firstLine {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.mainBlock .firstLine .first {
+    width: 50vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.mainBlock .secLine {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.mainBlock .secLine .fifth {
+    width: 50vw;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.mainBlock .firstLine img, .mainBlock .secLine img {
+    width: 25vw;
+    height: 50vh;
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.mainBlock .shadows {
+    justify-content: space-between;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+
+.mainBlock .shadows img {
+    width: 50%;
+}
+
+.desc {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    position: absolute;
+    bottom: 0;
+    width: -webkit-fill-available;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desc .mainTitles h1 {
+    margin: 0;
+    font-family: 'Mont-SemiBold', sans-serif;
+    font-size: 70px;
+    color: white;
+}
+
+.desc .mainTitles h2 {
+    width: 600px;
+    font-family: 'Mont-SemiBold', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.desc .accentTitles {
+    width: 400px;
+    font-size: 20px;
+    color: white;
+}
+
+.desc .accentTitles a {
+    border-bottom-width: 2px;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+
+.about {
+    display: flex;
+    margin: 60px 30px;
+    justify-content: space-between;
+}
+
+.about .mainTitles {
+    display: grid;
+    width: 350px;
+}
+
+.about a {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: fit-content;
+    color: #1E4391;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.about .mainTitles h1 {
+    color: #1E4391;
+    font-size: 48px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.about .mainTitles button {
+    height: fit-content;
+}
+
+.about .mainTitles p {
+    font-family: 'Mont-Regular', sans-serif;
+}
+
+.about .factsTitles .videos {
+    display: flex;
+
+}
+
+.about .factsTitles .videos iframe {
+    margin-left: 10px;
+    width: 50%;
+}
+
+.about .factsTitles .digits {
+    display: flex;
+}
+
+.about .factsTitles .digits div {
+    width: 300px;
+    margin-left: 10px;
+}
+
+.about .factsTitles .digits div h1 {
+    color: #1E4391;
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+.about .factsTitles .digits div hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-width: 4px;
+    color: #1E4391;
+    border-style: solid;
+}
+
+.about .factsTitles .digits div h5 {
+    font-family: 'Mont-Regular', sans-serif;
+}
+
+.howCome {
+    margin-right: 30px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.howCome .head {
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.howCome .head h1 {
+    color: #1E4391;
+    font-size: 48px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.howCome .head .select {
+    align-items: center;
+    display: flex;
+}
+
+.howCome .head .select .switch {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.howCome .head .select h3 {
+    font-size: 21px;
+}
+
+.howCome .head .select .budgetTitle {
+    color: #1E4391;
+}
+
+.howCome .head .select .contractTitle {
+    color: rgba(34, 34, 34, 0.5);
+}
+
+.howCome .head .select .switch input[type="checkbox"] {
+    width: 50px;
+    height: 25px;
+    -webkit-appearance: none;
+    outline: none;
+    background: #1E4391;
+    border-radius: 20px;
+}
+
+.howCome .head .select .switch input[type="checkbox"]:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    transition: .5s;
+    transform: scale(1.1) translate(9px, 7px);
+}
+
+.howCome .head .select .switch input:checked[type="checkbox"]:before {
+    left: 23px;
+}
+
+.howCome .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.howCome .content .first {
+    display: flex;
+    align-items: baseline;
+    width: 400px;
+}
+
+.howCome .content .first .step {
+    justify-content: center;
+    text-align: -webkit-center;
+}
+
+.howCome .content .first .step div {
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    background-color: #1E4391;
+    padding: 10px;
+    color: white;
+    border-radius: 100%;
+    border-style: none;
+    margin-bottom: 14px;
+}
+
+.howCome .content .first .step hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 30px;
+    border-style: solid;
+    border-width: 1px;
+    color: #1E4391;
+    transform: rotate(90deg);
+
+}
+
+.howCome .content .first .step figure {
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    background-color: white;
+    color: #1E4391;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.howCome .content .first .firstDesc {
+    /*display: grid;*/
+    height: auto;
+    justify-items: start;
+}
+
+.howCome .content .first .firstDesc .boldTitle {
+    font-family: 'Mont-SemiBold', sans-serif;
+    color: #1E4391;
+    font-size: 18px;
+    width: 250px;
+}
+
+.howCome .content .first .firstDesc h3 {
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-family: 'Mont-Regular', sans-serif;
+}
+
+.howCome .content .first .firstDesc div h4 {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.howCome .content .first .firstDesc div {
+    margin-bottom: 15px;
+}
+.howCome .content .first .firstDesc a {
+    /*text-decoration: underline;*/
+    /*text-underline-position: under;*/
+    color: #1E4391;
+    font-size: 14px;
+    border-bottom-width: 2px;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #1E4391;
+}
+
+.howCome .content .first .firstDesc div .title {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+}
+.howCome .content .first .firstDesc div .date {
+    color: #1E4391;
+    font-size: 14px;
+}
+
+.bottomFinal {
+    margin-bottom: 0;
+    bottom: 0;
+    border-style: solid;
+    border-width: 30px;
+    width: -webkit-fill-available;
+    border-image: linear-gradient(to left, #FF2D7F, #FB3727, #FEEA0F) 30;
+}
